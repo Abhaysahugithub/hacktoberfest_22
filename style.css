@@ -91,12 +91,6 @@ a:hover {
         transition: all 0.5s;
     }
 
-    nav ul li {
-        display: block;
-    }
-
-    nav ul li a {}
-
     .menu {
         color: white;
     }
