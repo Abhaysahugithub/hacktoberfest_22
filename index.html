@@ -12,6 +12,7 @@
 <body>
     <div class="topp">
         <h1 class="top"> <em>Welcome to this famous website hosted by Abhay Sahu</em> </h1>
+        <img id="icon" src="./moon.png">
         <p class="p"><b>This is my resume. You can see my <span class="myself">skillset and achievements</span> here.
         </p>
 
@@ -21,24 +22,28 @@
         <p class="about"> I am ABHAY SAHU. I am a full stack developer and a competitive programmer. </p>
     </div>
     <hr>
-    <h2>SKILL LIST</h2>
-    <ul>
-        <li id="code">CODING</li>
-        <li>WEBD</li>
-        <li>HTML</li>
-        <li>CSS</li>
+    <div class="top-container">
+      <h2 class="h-s">SKILL LIST</h2>
+      <ul>
+          <li>CODING</li>
+          <li>WEBD</li>
+          <li>HTML</li>
+          <li>CSS</li>
+      </ul>
+    </div>
 
-    </ul>
-    <h3>CODEFORCES:</h3>
-    <a href="https://codeforces.com/profile/AbhayS" target="_blank">CF HANDLE</a>
-    <hr>
+    <div class="middle-container">
+      <h3>CODEFORCES:</h3>
+      <a href="https://codeforces.com/profile/AbhayS" target="_blank">CF HANDLE</a>
+      <hr>
 
-    <h3>HACKERRANK:</h3>
-    <a href="https://www.hackerrank.com/abhaysahu20003" target="_blank"> HACKERRANK HANDLE</a>
-    <hr>
+      <h3>HACKERRANK:</h3>
+      <a href="https://www.hackerrank.com/abhaysahu20003" target="_blank"> HACKERRANK HANDLE</a>
+      <hr>
 
-    <h3>CODECHEF:</h3>
-    <a href="https://www.codechef.com/users/abhay_sahu123" target="_blank">CC HANDEL</a>
+      <h3>CODECHEF:</h3>
+      <a href="https://www.codechef.com/users/abhay_sahu123" target="_blank">CC HANDEL</a>
+    </div>
 
     <header>
 
@@ -80,6 +85,19 @@
             <img src="5f46bd5424fa71052301839e_how to give a presentation in a meeting.jpg" alt="">
         </div>
     </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./sun.png";
+            }else {
+                icon.src = "./moon.png";
+            }
+        }
+    </script>
 
 </body>
 
