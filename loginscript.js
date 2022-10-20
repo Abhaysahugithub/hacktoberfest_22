@@ -33,3 +33,7 @@ window.addEventListener('resize',()=>{
 	generateBg();
 });
 generateBg();
+
+
+		
+}
